@@ -39,6 +39,7 @@ CHANNEL_ARCH = {
     'x86_64':       'channel-x86_64',
     'ppc':          'channel-ppc',
     'ppc64':        'channel-ppc64',
+    'aarch64':      'channel-aarch64',
 }
 
 SPLIT_PATTERN = '[ ,]+'
