@@ -89,5 +89,10 @@ CREATE INDEX rhn_channel_access_idx
     TABLESPACE [[64k_tbs]]
     NOLOGGING;
 
+CREATE INDEX rhn_channel_id_name_idx
+    ON rhnChannel(parent_channel, id, name)
+    TABLESPACE [[64k_tbs]]
+    NOLOGGING;
+
 CREATE SEQUENCE rhn_channel_id_seq START WITH 101;
 

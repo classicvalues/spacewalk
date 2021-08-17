@@ -58,3 +58,8 @@ CREATE INDEX rhn_snc_speid_idx
     NOPARALLEL
     TABLESPACE [[128m_tbs]]
     NOLOGGING;
+
+CREATE INDEX rhn_snc_server_errata_id_idx
+    ON rhnServerNeededCache(server_id, errata_id)
+    TABLESPACE [[128m_tbs]]
+    NOLOGGING;
